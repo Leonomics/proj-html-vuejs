@@ -6,9 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret, faChevronDown, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faChevronDown, faCartShopping, faPlus, faArrowRight, faClock, faBurger, faMobileScreen, faCar} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faUserSecret, faChevronDown, faCartShopping)
+library.add(faUserSecret, faChevronDown, faCartShopping, faPlus, faArrowRight, faClock, faBurger, faMobileScreen, faCar)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
