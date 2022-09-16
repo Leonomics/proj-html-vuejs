@@ -3,7 +3,7 @@
     <div class="plusIcon">
       +
     </div>
-    <div class="catchPhraseContainer">
+    <div class="catchPhraseContainer headerItemsContainer">
       <div class="hungry">
         hungry?
       </div>
@@ -99,7 +99,7 @@
 export default {
   name: 'HeaderComponent',
   props: {
-    msg: String
+
   }
 }
 </script>
@@ -109,7 +109,8 @@ export default {
   .headerComponent{
     position: relative;
     background-image: url(../assets/images/demo-takeout.jpg);
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 664px;
   }
   .plusIcon{
