@@ -1,5 +1,5 @@
 <template>
-    <div class="headerItemsContainer">
+    <div class="headerItemsContainer sectionWrapper">
         <div class="titleAndButton">
             <h1>Latest News</h1>
             <button class="menuButton">
@@ -46,10 +46,18 @@ export default {
         display:flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 39px;
+    }
+    .sectionWrapper{
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .newsCards{
         display: flex;
         justify-content: space-between;
         text-align: center;
+    }
+    .card-body{
+        margin-top: 27px;
     }
 </style>

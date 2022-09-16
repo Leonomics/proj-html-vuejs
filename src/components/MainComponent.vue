@@ -34,6 +34,8 @@ export default {
     .title{
         margin-top: 45px;
         text-align: center;
+        margin-bottom: 50px;
+        margin-top: 72px;
     }
     .cardWrapper{
         display: flex;

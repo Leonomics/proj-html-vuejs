@@ -66,25 +66,25 @@
     </nav>
     </div>
     <div class="delivery">
-      <div>
+      <div class="deliveryIconAndText">
         <font-awesome-icon icon="fa-solid fa-clock" />
         <div>
           24/7 DELIVERY
         </div>
       </div>
-      <div>
+      <div class="deliveryIconAndText">
         <font-awesome-icon icon="fa-solid fa-burger" />
         <div>
           OVER 100 DISHES
         </div>
       </div>
-      <div>
+      <div class="deliveryIconAndText">
         <font-awesome-icon icon="fa-solid fa-mobile-screen" />
         <div>
           IN APP ORDERING
         </div>
       </div>
-      <div>
+      <div class="deliveryIconAndText">
         <font-awesome-icon icon="fa-solid fa-car" />
         <div>
           CAR DELIVERY
@@ -118,13 +118,17 @@ export default {
     text-align: center;
     right:11px;
     top: 11px;
+    font-size: 3rem;
     border-radius: 50%;
     background-color: red;
     color: white;
-    height: 32px;
-    width: 32px;
+    height: 80px;
+    vertical-align: middle;
+    width: 80px;
   }
-
+  .demosTag{
+    margin-bottom: 2px;
+  }
 
   .catchPhraseContainer{
     position:absolute;
@@ -178,7 +182,7 @@ export default {
   .leftTags{
     color: white;
     position: absolute;
-    top: 92px;
+    top: 192px;
     right: 9px;
     text-align: center;
   }
@@ -187,9 +191,11 @@ export default {
   background-color: white;
   color:black;
   border-radius: 5px;
+  width: 100px;
   padding: 9px;
   aspect-ratio: 1;
   align-items: center;
+  vertical-align: middle;
 }
 .price{
   color:green;
@@ -198,7 +204,6 @@ export default {
 }
 
 .delivery{
-  --height: 100px;
   color: black;
   background-color: white;
   height: 76px;
@@ -210,6 +215,15 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.deliveryIconAndText{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  color: grey;
+}
+.deliveryIconAndText:not(:last-of-type){
+  margin-right: 86px;
+}
 
 </style>
