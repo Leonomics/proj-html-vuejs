@@ -5,6 +5,9 @@
                 Our Most Popular Dishes
             </h1>
             <CardComponent/>
+            <button class="menuButton">
+                START YOUR ORDER
+            </button>
         </div>
         <PromoComponent/>
         <MenuCategoriesComponent/>
@@ -41,5 +44,15 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .menuButton{
+    width: 129px;
+    height: 26px;
+    font-size: 0.5rem;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    margin-top: 34px;
+    margin-bottom: 34px;
     }
 </style>

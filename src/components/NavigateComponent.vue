@@ -1,14 +1,14 @@
 <template>
     <ul>
-        <li class="linkList" v-for="link in orderLinks" :key="link.id">{{link.name}}</li>
+        <li class="linkList" v-for="link in navigateLinks" :key="link.id">{{link.name}}</li>
     </ul>
 </template>
 
 
 <script>
 export default {
-    props:['orderLinks'],
-    name: "OrderOnlineComponent",
+    props:['navigateLinks'],
+    name: "NavigateComponent",
 }
 </script>
 

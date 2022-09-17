@@ -1,5 +1,5 @@
 <template>
-    <div class="headerItemsContainer">
+    <div class="headerItemsContainer menuCategoriesContainer">
         <div class="titleAndButton">
             <h1>Menu Categories</h1>
             <button class="menuButton">
@@ -75,7 +75,7 @@ export default {
                 },
                 {
                     "image":"../assets/images/specials-menu-background.jpg",
-                    "title":"spedials",
+                    "title":"specials",
                     //"price":"$6.99"
                 },
             ]
@@ -99,6 +99,7 @@ export default {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 42px;
   }
   .grid-container {
         display: grid;
@@ -113,5 +114,9 @@ export default {
         font-size: 1rem;
         width:172px;
         height: 124px;
+    }
+    .menuCategoriesContainer{
+        margin-top: 92px;
+        margin-bottom: 92px;
     }
 </style>
