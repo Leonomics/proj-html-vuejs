@@ -109,8 +109,8 @@ export default {
   .headerComponent{
     position: relative;
     background-image: url(../assets/images/demo-takeout.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 664px;
   }
   .plusIcon{
