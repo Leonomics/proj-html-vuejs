@@ -27,8 +27,14 @@
                 <h3 class="linkSectionTitle">OPENING HOURS</h3>
                 <OpeningHoursComponent :openingHoursLinks="openingHoursLinks" ></OpeningHoursComponent>
             </div>
-            <div>
+            <div class="voucher">
                 <h3 class="linkSectionTitle">VOUCHER</h3>
+                <img class="couponImage" src="../assets/images/footer-coupon-200x200.png" />
+                <div class="promoText">
+                    <p>Just Use The Code</p>
+                    <p class="promoCode">FIRSTORDER</p>
+                    <p>At Checkout</p>
+                </div>
             </div>
         </div>
         <div class="contactArea">
@@ -37,12 +43,18 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis delectus accusantium laboriosam ratione corporis iste, dolores nihil architecto dolorem!
             </p>
-            <input type="email" placeholder="you@email.com">
-            <button>
+            <input class="emailField" type="email" placeholder="you@email.com">
+            <button class="subscribeButton">
                 SUBSCRIBE
             </button>
             <div class="socialIcons">
-
+                <font-awesome-icon class="socialIcon" icon="fa-brands fa-facebook-f" />
+                <font-awesome-icon class="socialIcon" icon="fa-brands fa-twitter" />
+                <font-awesome-icon class="socialIcon" icon="fa-brands fa-instagram" />
+                <font-awesome-icon class="socialIcon" icon="fa-brands fa-linkedin" />
+                <font-awesome-icon class="socialIcon" icon="fa-solid fa-wifi" />
+                <font-awesome-icon class="socialIcon" icon="fa-brands fa-youtube" />
+                <font-awesome-icon class="socialIcon" icon="fa-solid fa-envelope" />
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laboriosam sit fugit nostrum quae tempora, pariatur et repudiandae nam impedit?</p>
         </div>
@@ -189,15 +201,22 @@ export default {
         background-image: url(../assets/images/footer-background-scaled.jpg);
         background-size: contain;
     }
+
+    /*set color for all the the font in the footer*/
     div{
         color: white;
     }
+
+    /*LINKS*/
     .linksWrapper{
         display: flex;
         justify-content: space-around;
         max-width: 875px;
         margin:0 auto;
     }
+
+
+    /*CONTACT AREA*/
     .contactArea{
         display: flex;
         align-items: center;
@@ -215,9 +234,50 @@ export default {
     .appleStoreBadge, .playStoreBadge{
         border:2px solid lightblue;
         border-radius: 15px;
+        width: 92px;
+        height: 32px;
     }
     .appleStoreBadge{
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+    .emailField{
+        width: 430px;
+        height: 30px;
+        border-radius: 15px;
+        margin-bottom: 21px;
+        margin-top: 21px;
+    }
+    .subscribeButton{
+        width: 430px;
+        height: 30px;
+        font-size: 0.5rem;
+        color: white;
+        background-color: red;
+        border-radius: 15px;
+        margin-bottom: 21px;
+    }
+
+
+    /*SOCIALS*/
+    .socialIcons{
+        color: white;
+        margin-bottom: 28px;
+    }
+    .socialIcon:not(:last-of-type){
+        margin-right: 12px;
+    }
+
+
+    /*VOUCHER*/
+    .couponImage{
+        width:96px;
+        height: 96px;
+    }
+    .voucher{
+        text-align: center;
+    }
+    .promoCode{
+        color: yellow;
     }
 </style>
