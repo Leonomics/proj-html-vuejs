@@ -6,10 +6,51 @@
                 VIEW THE FULL MENU <font-awesome-icon icon="fa-solid fa-arrow-right" />
             </button>
         </div>
-        <div class="grid-container">
+        <!--<div class="grid-container">
             <div v-for="(category, index) in categories" :key="index" class="grid-item">
                 <img class="comicCover" :src="category.image" />
                 {{category.title.toUpperCase()}}
+            </div>-->
+        <div class="grid-container">
+            <div class="grid-item appetizers">
+                <div class="textWrapper">
+                    APPETIZERS
+                </div>
+            </div>
+            <div class="grid-item burgers">
+                <div class="textWrapper">
+                    BURGERS
+                </div>
+            </div>
+            <div class="grid-item pizzas">
+                <div class="textWrapper">
+                    PIZZAS
+                </div>
+            </div>
+            <div class="grid-item fries">
+                <div class="textWrapper">
+                    FRIES
+                </div>
+            </div>
+            <div class="grid-item sides">
+                <div class="textWrapper">
+                    SIDES
+                </div>
+            </div>
+            <div class="grid-item desserts">
+                <div class="textWrapper">
+                    DESSERTS
+                </div>
+            </div>
+            <div class="grid-item beverages">
+                <div class="textWrapper">
+                    BEVERAGES
+                </div>
+            </div>
+            <div class="grid-item specials">
+                <div class="textWrapper">
+                    SPECIALS
+                </div>
             </div>
         </div>
         <div class="restrictions grid-container">
@@ -107,16 +148,85 @@ export default {
         padding: 10px;
         column-gap: 26px;
     }
-    .grid-item{
+.grid-item{
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
         width:172px;
         height: 124px;
-    }
-    .menuCategoriesContainer{
+        margin-bottom: 10px;
+}
+.menuCategoriesContainer{
         margin-top: 92px;
         margin-bottom: 92px;
-    }
+}
+.textWrapper{
+    position: absolute;
+    top: 50%;
+    color: white;
+}
+
+
+
+.appetizers{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/appetizers-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.burgers{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/burgers-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pizzas{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/pizza-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fries{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/fries-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sides{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/sides-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.desserts{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/desserts-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.beverages{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/beverages-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.specials{
+    width:172px;
+    height: 125px;
+    background-image: url(../assets/images/sides-menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 </style>

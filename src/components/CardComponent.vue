@@ -15,14 +15,14 @@
                 </div>
             </div>
             <div  class="card cardImageAndBody">
-                <img  src="../assets/images/skin-on-fries-200x286.jpg" />
+                <img  src="../assets/images/choco-cookie-frappe-200x286.jpg" />
                 <div class="card-body">
                     <h3 class="card-text">Choco Cookie Frappe</h3>
                     <p class="price">$4.99</p>
                 </div>
             </div>
             <div  class="card cardImageAndBody">
-                <img  src="../assets/images/skin-on-fries-200x286.jpg" />
+                <img  src="../assets/images/donut-burger-200x286.jpg" />
                 <div class="card-body">
                     <h3 class="card-text">The Donut Burger</h3>
                     <p class="price">$6.99</p>
