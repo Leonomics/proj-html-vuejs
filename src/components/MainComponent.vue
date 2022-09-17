@@ -11,6 +11,8 @@
         </div>
         <PromoComponent/>
         <MenuCategoriesComponent/>
+        <DownloadBannerComponent/>
+        <LatestNewsComponent/>
     </main>
 </template>
 
@@ -18,6 +20,8 @@
 import CardComponent from './CardComponent.vue';
 import PromoComponent from './PromoComponent.vue';
 import MenuCategoriesComponent from './MenuCategoriesComponent.vue';
+import DownloadBannerComponent from './DownloadBannerComponent.vue';
+import LatestNewsComponent from './LatestNewsComponent.vue';
 
 export default {
     name: "MainComponent",
@@ -27,7 +31,9 @@ export default {
     components: {
     CardComponent,
     PromoComponent,
-    MenuCategoriesComponent
+    MenuCategoriesComponent,
+    DownloadBannerComponent,
+    LatestNewsComponent
 },
 }
 </script>
