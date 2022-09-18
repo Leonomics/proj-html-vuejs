@@ -241,6 +241,12 @@ export default {
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    .appleStoreBadge:hover{
+        cursor: pointer;
+    }
+    .playStoreBadge:hover{
+        cursor: pointer;
+    }
     .emailField{
         width: 430px;
         height: 30px;
@@ -266,6 +272,9 @@ export default {
     }
     .socialIcon:not(:last-of-type){
         margin-right: 12px;
+    }
+    .socialIcon:hover{
+        cursor: pointer;
     }
 
 

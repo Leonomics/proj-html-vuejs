@@ -9,6 +9,7 @@
             </div>-->
             <div  class="card cardImageAndBody">
                 <img  src="../assets/images/skin-on-fries-200x286.jpg" />
+                <p class="viewCart">VIEW CART</p>
                 <div class="card-body">
                     <h3 class="card-text">Skin On Fries</h3>
                     <p class="price">$3.00-$6.00</p>
@@ -68,6 +69,16 @@
     li{
         list-style: none;
     }
+    .cardImageAndBody{
+        position: relative;
+    }
+    .viewCart{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+        color: transparent;
+    }
     .cardContainer{
         display: flex;
         flex-direction: row;
@@ -85,5 +96,9 @@
     img{
         width:237px;
         height: 335px;
+    }
+    .cardImageAndBody:hover{
+        cursor: pointer;
+        filter: brightness(80%);
     }
 </style>

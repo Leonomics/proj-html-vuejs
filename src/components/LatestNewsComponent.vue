@@ -57,6 +57,11 @@ export default {
         justify-content: space-between;
         text-align: center;
     }
+    .card:hover{
+        cursor: pointer;
+        box-shadow: 5px 10px 8px 10px rgba(178,178,178, 0.5);
+
+    }
     .card-body{
         margin-top: 27px;
     }

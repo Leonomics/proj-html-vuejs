@@ -55,4 +55,11 @@
     .appleStore{
         margin-right: 12px;
     }
+
+    .appleStore:hover{
+        cursor: pointer;
+    }
+    .playStore:hover{
+        cursor: pointer;
+    }
 </style>
